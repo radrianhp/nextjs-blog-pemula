@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import Layout from '../../component/layout';
 import Image from 'next/image';
+import Navbar from '../../component/navbar';
 
 interface BlogSpot {
   detailPost: any;
@@ -12,6 +13,7 @@ export default function DetailPost(props: BlogSpot) {
 
   return (
     <Layout>
+      <Navbar />
       <div className='py-10 space-y-2 rounded-lg md:space-y-5'>
         <div className='flex flex-col space-y-3'>
           <h1 className='text-3xl font-extrabold text-gray-800 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14'>
